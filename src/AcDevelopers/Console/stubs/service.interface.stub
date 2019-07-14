@@ -1,0 +1,15 @@
+<?php
+
+namespace DummyNamespace;
+
+use AcDevelopers\EloquentRepository\Contracts\ServiceInterface;
+
+/**
+ * Interface DummyClass.
+ *
+ * @package DummyNamespace
+ */
+interface DummyClass extends ServiceInterface
+{
+    //
+}

@@ -1,0 +1,33 @@
+<?php
+
+namespace DummyNamespace;
+
+
+use AcDevelopers\EloquentRepository\BaseService;
+use DummyFullRepositoryClass;
+use DummyFullServiceInterfaceClass;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+
+/**
+ * Class DummyClass.
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends BaseService implements DummyServiceInterfaceClass
+{
+    /**
+     * BookService constructor.
+     *
+     * @param \DummyFullRepositoryClass $repository
+     */
+    public function __construct(DummyRepositoryClass $repository)
+    {
+        parent::__construct($repository);
+
+        //
+    }
+}
+
+
+

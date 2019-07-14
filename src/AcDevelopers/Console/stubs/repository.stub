@@ -1,0 +1,26 @@
+<?php
+
+namespace DummyNamespace;
+
+
+use AcDevelopers\EloquentRepository\BaseRepository;
+use DummyFullModelClass;
+use DummyFullInterfaceClass;
+
+/**
+ * Class DummyClass.
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends BaseRepository implements DummyInterfaceClass
+{
+    /**
+     * Specify Model class name
+     *
+     * @return string|\DummyFullModelClass
+     */
+    public function model(): string
+    {
+        return DummyModelClass::class;
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "name": "acdevelopers/eloquent-repository",
+    "description": "Eloquent repository",
+    "type": "library",
+    "keywords": ["laravel", "blueprint", "eloquent", "repository"],
+    "license": "MIT",
+    "support": {},
+    "authors": [
+        {
+            "name": "Anitche Chisom",
+            "email": "anitchec.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/config": "~5.6.0|~5.7.0|~5.8.0|~5.9.0",
+        "illuminate/console": "~5.6.0|~5.7.0|~5.8.0|~5.9.0",
+    	"illuminate/database": "~5.6.0|~5.7.0|~5.8.0|~5.9.0",
+        "illuminate/filesystem": "~5.6.0|~5.7.0|~5.8.0|~5.9.0",
+    	"illuminate/pagination": "~5.6.0|~5.7.0|~5.8.0|~5.9.0",
+    	"illuminate/http": "~5.6.0|~5.7.0|~5.8.0|~5.9.0",
+        "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|~5.9.0"
+    },
+    "require-dev": {
+        "acdevelopers/artisan-generator":  "dev-master",
+        "fzaninotto/faker": "^1.8",
+        "vlucas/phpdotenv": "^3.3",
+        "codeception/codeception": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AcDevelopers\\EloquentRepository\\": "src/AcDevelopers/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AcDevelopers\\EloquentRepository\\Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../artisan-generator"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AcDevelopers\\EloquentRepository\\RepositoryServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
