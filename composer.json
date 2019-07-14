@@ -1,8 +1,8 @@
 {
-    "name": "acdevelopers/eloquent-repository",
+    "name": "ac-developers/eloquent-repository",
     "description": "Eloquent repository",
     "type": "library",
-    "keywords": ["laravel", "blueprint", "eloquent", "repository"],
+    "keywords": ["laravel", "services", "eloquent", "repository"],
     "license": "MIT",
     "support": {},
     "authors": [
@@ -24,8 +24,7 @@
     "require-dev": {
         "acdevelopers/artisan-generator":  "dev-master",
         "fzaninotto/faker": "^1.8",
-        "vlucas/phpdotenv": "^3.3",
-        "codeception/codeception": "^3.0"
+        "vlucas/phpdotenv": "^3.3"
     },
     "autoload": {
         "psr-4": {
@@ -37,12 +36,6 @@
             "AcDevelopers\\EloquentRepository\\Tests\\": "tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../artisan-generator"
-        }
-    ],
     "extra": {
         "laravel": {
             "providers": [
