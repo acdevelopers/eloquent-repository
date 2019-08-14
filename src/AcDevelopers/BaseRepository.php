@@ -776,8 +776,8 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
     public function update($id, array $attributes)
     {
         $this->applyScope();
-
-        $model = $this->model->findOrFail($id);
+        
+        $model = $this->retrieveModelInstance($id);;
         $model->fill($attributes);
         $model->save();
 
