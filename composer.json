@@ -14,13 +14,13 @@
     "require": {
         "php": ">=7.1",
         "ac-developers/artisan-generator":  "dev-master",
-        "illuminate/config": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0",
-        "illuminate/console": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0",
-    	"illuminate/database": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0",
-        "illuminate/filesystem": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0",
-    	"illuminate/pagination": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0",
-    	"illuminate/http": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0",
-        "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|~5.9.0|~6.0"
+        "illuminate/config": "^5.6|^6.0",
+        "illuminate/console": "^5.6|^6.0",
+    	"illuminate/database": "^5.6|^6.0",
+        "illuminate/filesystem": "^5.6|^6.0",
+    	"illuminate/pagination": "^5.6|^6.0",
+    	"illuminate/http": "^5.6|^6.0",
+        "illuminate/support": "^5.6|^6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.8",
