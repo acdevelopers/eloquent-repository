@@ -376,6 +376,24 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
 
         return $model;
     }
+    
+    /**
+     * Find data by between values in one field
+     *
+     * @param       $field
+     * @param array $values
+     * @param array $columns
+     *
+     * @return Builder[]|\Illuminate\Database\Eloquent\Collection
+     */
+    public function findWhereBetween($field, array $values, $columns = ['*'])
+    {
+        $this->applyCriteria();
+        $this->applyScope();
+        $model = $this->model->whereBetween($field, $values)->get($columns);
+        $this->resetModel();
+        return $model;
+    }
 
     /**
      * Find data by multiple values in one field

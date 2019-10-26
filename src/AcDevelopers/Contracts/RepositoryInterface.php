@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tsommie
- * Date: 7/6/19
- * Time: 8:44 PM
- */
 
 namespace AcDevelopers\EloquentRepository\Contracts;
 
@@ -147,6 +141,17 @@ interface RepositoryInterface
      * @throws RepositoryException
      */
     public function findWhere(array $where, $columns = ['*']);
+    
+    /**
+     * Find data by between values in one field
+     *
+     * @param       $field
+     * @param array $values
+     * @param array $columns
+     *
+     * @return Builder[]|\Illuminate\Database\Eloquent\Collection
+     */
+    public function findWhereBetween($field, array $values, $columns = ['*']);
 
     /**
      * Find data by multiple values in one field
